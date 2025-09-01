@@ -1,10 +1,10 @@
-# Exercice 0 - Preparation Steps
+# Exercise 0 - Preparation Steps
 
 In this exercise, you will create your own copy of this repository and optionally, set up a GitHub account.
 
 Finally you will login to for this session prepared BTP account.
 
-## Exercice 0.0 - (Optional) Create a GitHub account
+## Exercise 0.0 - (Optional) Create a GitHub account
 
 1. Navigate to [GitHub](https://github.com/).
 
@@ -14,7 +14,7 @@ Finally you will login to for this session prepared BTP account.
 
 4. Follow the prompts to create your personal account.
 
-## Exercice 0.1 - Create a Copy of This Repository
+## Exercise 0.1 - Create a Copy of This Repository
 
 1. Login to [GitHub](https://github.com/).
 
@@ -28,7 +28,7 @@ Finally you will login to for this session prepared BTP account.
 
 4. Choose **Create Fork**. You are now brought to a copy of the repository in your GitHub account.
 
-## Execise 0.2 - Login to your BTP subaccount
+## Exercise 0.2 - Login to your BTP subaccount
 
 1. Navigate to the [SAP Business Technology Platform - Cockpit](https://account.hana.ondemand.com/#/home/welcome)
 
