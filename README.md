@@ -67,3 +67,82 @@ Support for the content in this repository is available during the actual time o
 
 ## License
 Copyright (c) 2024 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
+
+
+
+
+
+Simplify the operational effort behind any cloud solution. This service is a cloud-based automation service within the DevOps portfolio. As a low-code/no-code engine, it is designed to simplify and automate complex manual processes and tasks, enabling DevOps and Operations teams to enhance efficiency and reduce operational overhead by designing and running automation flows.
+
+The service comes with more than 300 built-in automated procedures that cover various DevOps scenarios, including application and database lifecycle management operations, monitoring of application and database health status, root cause analysis, remediation actions, mass operations, and more. By using the low-code/no-code capabilities of this service and its generative AI functionalities, you can also easily create custom commands and tailor every step of the automation to your needs and requirements. Furthermore, the service is highly scalable - it can run hundreds of automations simultaneously, as it is designed to work with low latency even under heavy workload.
+
+The service can execute commands towards different runtimes, services, and third-party tools. Via its REST API, it can also be integrated with any custom application.
+
+### Features
+
+**Run predefined commands**
+Select from catalogs dedicated to various DevOps scenarios and trigger ready-to-use commands.
+
+**Create custom commands**
+Create your own catalogs with custom commands by reusing the provided content or by chaining, composing, and configuring your custom commands from scratch.
+
+**Back up and restore your content**
+Back up your custom content on demand or on a scheduled basis. This enables you to restore your content in the future if needed.
+
+**Store data securely**
+Store small amounts of sensitive data in inputs that can be reused across command executions.
+
+**Schedule executions**
+Schedule executions to run at a specific date and time or at regular intervals.
+
+**React to events**
+Configure executions to be triggered automatically when events are fired from other services, platforms, and applications.
+
+**Generate content with AI**
+Generate various types of content with the help of generative AI by providing a simple prompt.
+
+**Operate in private environments**
+Perform different types of requests and automate the operation of resources in your private and on-premise environments.
+
+### Multitenancy Support
+This service supports multitenancy. It can be used in tenant-aware applications.
+
+The service is available in the following regions:
+
+| Region Name | Region Technical Key | NAT IPs (egress, IPs for requests from Automation Pilot) | LB IPs (ingress, for incoming requests) | API Endpoint | Connectivity Proxy Endpoint |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Europe (Frankfurt) | cf-eu10 | 18.192.167.80, 18.158.182.81, 18.192.94.153, 18.159.0.107, 18.159.145.225 | 3.122.189.245, 3.64.120.107, 3.64.100.186, 52.57.133.101 | emea.autopilot.cloud.sap | connproxy.emea.autopilot.cloud.sap |
+| Europe (Netherlands) | cf-eu20 | | | | |
+| US East (VA) | cf-us10 | 34.70.41.191, 104.198.247.34 | | amer.autopilot.cloud.sap | connproxy.amer.autopilot.cloud.sap |
+| US Central (IA) | cf-us30 | | | | |
+| Canada (Montreal) | cf-ca10 | | | | |
+| Australia (Sydney) | cf-ap10 | 3.105.105.227, 13.236.234.116, 13.238.123.219 | 54.253.134.59, 52.64.195.197, 13.210.222.4, 52.63.82.125, 13.211.9.192, 13.55.12.174 | aus.autopilot.cloud.sap | connproxy.aus.autopilot.cloud.sap |
+| Singapore | cf-ap21 | 20.198.163.232, 20.198.186.35, 20.198.186.35, 20.198.163.248, 20.197.75.244, 20.197.75.129 | | apac.autopilot.cloud.sap | connproxy.apac.autopilot.cloud.sap |
+| Japan (Tokyo) | cf-jp10 | | | | |
+| KSA (Dammam – KSA Regulated Customers) | cf-sa30 | 34.166.98.117, 34.166.80.109, 34.166.55.178 | | ksa.autopilot.cloud.sap | connproxy.ksa.autopilot.cloud.sap |
+
+For more information, please visit the Help Portal.
+
+**Note:** Business Technology Platform trial accounts in regions Singapore (ap21) and US East (VA) (us10).
+
+**Note:** The service can interact with resources in any region. All you need is to have an instance of the service.
+
+### Service Plans and Metering
+This page explains the relationship between the service plans in the Discovery Center and those in the cockpit, and provides information to help you understand how the service is billed.
+
+#### Service Plans
+| Service Plan (Discovery Center) | Service Plan (Cockpit: Entitlements) | Service Plan Description |
+| :--- | :--- | :--- |
+| Standard | standard (Application) | Make full use of the Automation Pilot free tier to explore its features in your testing environment. Only community support is available for free tier service plans and these are not subject to SLAs. |
+
+### Metrics
+| Metric | Definition |
+| :--- | :--- |
+| API Calls (in blocks of 1,000) | Calls made between a customer application or a back-end data source and a cloud service API to send any user action or system action. |
+
+#### Quota Calculation for High-Level Commands
+All high-level commands (see Working with Provided Catalogs) are built on top of the core commands mentioned above. Quota usage for these high-level commands can vary significantly, depending mostly on the resource being managed and the specifics of your environment. For example, restarting a small instance will consume less quota than restarting a large productive instance, simply because the process takes more time. Additionally, high-level and custom commands may include complex logic to handle different scenarios or to recover from failures. This dynamic nature means that it’s difficult to estimate quota consumption for these commands in advance - you can see the exact usage only after the execution.
+
+#### Service Specifics
+**Quota Calculation for Core Commands**
+The service comes with a wide range of provided commands for managing various aspects of the platform. They are built on top of several "core" commands that provide essential functionality. For each of these core commands, quotas (API calls) are calculated in a different way.
