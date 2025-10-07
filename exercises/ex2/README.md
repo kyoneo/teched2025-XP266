@@ -20,7 +20,7 @@ In this exercise, we will check whether the integration between SAP Cloud ALM an
  
 ## Exercise 2.1 - Create a new Feature
 
-1. Open [SAP Cloud ALM](https://xp266-calm-lf1zy9xc.authentication.eu10.hana.ondemand.com/login) and login with your user and password.
+1. Open [SAP Cloud ALM](https://xp266-calm-lf1zy9xc.eu10-004.alm.cloud.sap/launchpad#Shell-home) and login with your user and password.
 2. Go to the **Features** application.
 
     <br>![alt text](images/feature_tile.png)
