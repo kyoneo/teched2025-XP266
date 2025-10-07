@@ -127,7 +127,7 @@ You've successfully created your first CI/CD job with the Build stage and releas
 
 7. Repeat this step for your PRD node. (Choose Destination **Deploy_to_PRD** in this case).
 
-    `You should now see three transport nodes *DEV*, *TEST* and *PROD*.`
+    `You should now see three transport nodes *DEV*, *TEST* and *PRD*.`
 
 8.  Now create the **Transport Routes**. Click the connector button to create a new route.
    <br>![](/exercises/ex1/images/ctms_create_route.png)
