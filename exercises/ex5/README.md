@@ -4,7 +4,7 @@ In this exercise, we will verify the pipeline job status covering the different 
 
 ## Exercise 5.0 - Check the Pipeline Job Status
 
-1. Go to SAP Continuous Integration & Delivery.
+1. In your SAP BTP subaccount named with **XP266_CENTRAL**, go to **Services -> Instances and Subscription** and choose **Continuous Integration & Delivery**.
 
     <br> ![](images/CI_D_service.png)
 2. In the Jobs area click on your pipeline job.
